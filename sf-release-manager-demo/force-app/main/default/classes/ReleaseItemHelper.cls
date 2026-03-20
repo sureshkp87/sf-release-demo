@@ -1,3 +1,4 @@
+// Release v1.0 - ReleaseItemHelper
 public with sharing class ReleaseItemHelper {
 
     public static String getStatus(String status) {
@@ -8,5 +9,9 @@ public with sharing class ReleaseItemHelper {
         } else {
             return 'Pending review';
         }
+    }
+
+    public static Boolean isApproved(String status) {
+        return status == 'Approved';
     }
 }
